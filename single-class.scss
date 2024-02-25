@@ -1,0 +1,26 @@
+$font-fams: (
+  "rubik": "Rubik",
+  "ss3": "Source Sans 3",
+  "rw": "Raleway",
+);
+
+@each $name, $font in $font-fams {
+  .head2-#{$name} {
+    font-family: $font, sans-serif;
+    font-size: var(--font-size-lg);
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .head3-#{$name} {
+    font-family: $font, sans-serif;
+    font-size: var(--font-size-md);
+    background-color: var(--secondary-color-300);
+    color: var(--font-color-light-1);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+}
