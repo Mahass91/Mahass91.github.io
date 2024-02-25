@@ -1,0 +1,29 @@
+:root {
+  --primary-color-100: #ffa733;
+  --primary-color-200: #ff950a;
+  --primary-color-300: #d07f00;
+  --primary-color-400: #a15a00;
+  --primary-color-500: #763600;
+  --secondary-color-100: hsl(174, 100%, 38%);
+  --secondary-color-200: hsl(171, 100%, 32%);
+  --secondary-color-300: hsl(169, 100%, 25%);
+  --secondary-color-400: hsl(167, 100%, 19%);
+  --secondary-color-500: hsl(164, 100%, 14%);
+  --bg-color-1: hsl(0, 0%, 99%);
+  --bg-color-2: hsl(38, 20%, 100%);
+  --bg-color-3: hsl(35, 30%, 90%);
+  --bg-color-dark-1: hsl(0, 0%, 5%);
+  --bg-color-dark-2: hsl(35, 5%, 10%);
+  --bg-color-dark-3: hsl(38, 2%, 15%);
+  --font-color-dark-1: hsl(0, 0%, 15%);
+  --font-color-dark-2: hsl(0, 0%, 20%);
+  --font-color-dark-3: hsl(0, 0%, 20%);
+  --font-color-light-1: hsl(0, 0%, 96%);
+  --font-color-light-2: hsl(0, 0%, 88%);
+  --font-color-light-3: hsl(38, 10%, 85%);
+  --font-size-xs: min(0.875rem, 0.75rem + 0.05vw);
+  --font-size-sm: min(1.06rem, 0.875rem + 0.05vw);
+  --font-size-md: min(1.31rem, 1.06rem + 0.05vw);
+  --font-size-lg: min(1.875rem, 1.56rem + 0.05vw);
+  --font-size-xl: min(2.25rem, 2rem + 0.05vw);
+}
