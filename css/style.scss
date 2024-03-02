@@ -1,17 +1,17 @@
 @use "sass:color";
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Rubik", sans-serif;
+  }
 }
 
 @mixin border-style(
@@ -41,19 +41,6 @@ body {
 }
 .hero {
   padding-block: 30vh;
-  background-image: -o-radial-gradient(
-      100% 100%,
-      circle,
-      hsl(54, 100%, 63%, 0.75),
-      hsl(51, 100%, 62%, 0.8),
-      hsl(48, 100%, 61%, 0.8),
-      hsl(46, 100%, 60%, 0.85),
-      hsl(43, 100%, 60%, 0.85),
-      hsl(40, 100%, 60%, 0.9),
-      hsl(37, 100%, 60%, 0.9),
-      hsl(34, 100%, 60%, 0.95)
-    ),
-    url(/media/img/hero-background.jpg);
   background-image: radial-gradient(
       circle at 100% 100%,
       hsl(54, 100%, 63%, 0.75),
@@ -85,12 +72,10 @@ body {
 
 .about-me {
   padding: 4rem clamp(5px, 10vw - 20px, 10rem);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   .about-me-img {
+    display: flex;
     img {
       @include img-style(70%, auto, true, 50%);
       display: block;
@@ -115,8 +100,6 @@ body {
     .btn-dark {
       border-radius: 5px;
       background-color: var(--secondary-color-400);
-      -webkit-transition: 0.5s background-color;
-      -o-transition: 0.5s background-color;
       transition: 0.5s background-color;
     }
     .btn-dark:hover {
@@ -129,8 +112,6 @@ body {
   color: var(--font-color-light-1);
   line-height: 1.75rem;
   padding: 4rem clamp(5px, 5vw - 20px, 10rem);
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   @media screen and (min-width: 80em) {
     padding: 4rem clamp(5px, 10vw - 20px, 20rem);
@@ -141,7 +122,7 @@ body {
   }
   .features-wrapper {
     .features-container {
-      font-weight: 600;
+      font-weight: 800;
 
       .features-image {
         img {
@@ -175,8 +156,6 @@ body {
     @include border-style(3px, var(--font-color-light-1), solid, true, 10px);
     color: var(--font-color-light-1);
     font-weight: 600;
-    -webkit-transition: 0.5s background-color, 0.5s color;
-    -o-transition: 0.5s background-color, 0.5s color;
     transition: 0.5s background-color, 0.5s color;
   }
   .btn-light:hover {
@@ -187,8 +166,6 @@ body {
 
 .daily-life {
   background-color: var(--bg-color-1);
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding: 4rem clamp(5px, calc(10vw - 20px), 5rem);
 
@@ -227,6 +204,7 @@ body {
         padding-left: min(1.5rem, 0.5rem + 0.2vw);
         padding-right: min(1.5rem, 0.5rem + 0.2vw);
         font-size: var(--font-size-md);
+        line-height: 1.6rem;
       }
     }
   }
@@ -236,19 +214,11 @@ footer {
   background-color: var(--bg-color-dark-3);
   color: var(--font-color-light-3);
   padding-top: 4rem;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   .contact {
     font-size: var(--font-size-lg);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     a {
       text-decoration: none;
@@ -260,14 +230,8 @@ footer {
   }
   .google-maps {
     padding: 0.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     iframe {
       margin: auto;
