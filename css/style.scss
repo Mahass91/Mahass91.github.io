@@ -170,10 +170,10 @@ body {
   padding: 4rem clamp(5px, calc(10vw - 20px), 5rem);
 
   @media screen and (min-width: 48em) {
-    padding: 0 clamp(5px, 5vw, 5rem);
+    padding: 0 clamp(5px, 2vw, 5rem);
   }
   @media screen and (min-width: 64em) {
-    padding: 0 clamp(5px, 5vw, 5rem);
+    padding: 0 clamp(5px, 3vw, 5rem);
   }
   @media screen and (min-width: 120em) {
     padding: 0 clamp(5px, calc(15vw - 20px), 20rem);
