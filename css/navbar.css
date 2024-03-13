@@ -54,7 +54,7 @@ appears on the left side of the page.
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
     overflow-y: auto;
-    background-image: linear-gradient(hsla(36, 29%, 90%, 0.61), hsla(36, 29%, 90%, 0.61)), url(/media/Kids\ navbar.png);
+    background-image: linear-gradient(hsla(36, 29%, 90%, 0.61), hsla(36, 29%, 90%, 0.61)), url(/media/img/Kids\ navbar.png);
     background-size: contain, contain;
     background-color: var(--bg-color-3);
 }
