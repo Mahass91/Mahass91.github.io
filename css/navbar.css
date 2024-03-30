@@ -57,6 +57,7 @@ appears on the left side of the page.
     background-image: linear-gradient(hsla(36, 29%, 90%, 0.61), hsla(36, 29%, 90%, 0.61)), url(/media/img/Kids\ navbar.png);
     background-size: contain, contain;
     background-color: var(--bg-color-3);
+    border-right: 1px solid #76350044;
 }
     /*
     All anchors inside the menu should be styled like this.
@@ -105,7 +106,7 @@ transition: 0.5s background-color;
 
         #menu .pure-menu li[data-status="unselected"] a:hover span,
         #menu .pure-menu li[data-status="unselected"]  a:focus span {
-            translate: 25%;
+            translate: 9.6px;
             color: var(--primary-color-300);
         }
 
